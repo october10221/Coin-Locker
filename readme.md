@@ -13,9 +13,9 @@
 
 https://coinlocker-igeargeek.000webhostapp.com
 
-User:
-1.user1@igeargeek.com <br>
-2.user2@igeargeek.com <br>
+User: <br>
+user1@igeargeek.com <br>
+user2@igeargeek.com <br>
 
 
 ## Installation Local
