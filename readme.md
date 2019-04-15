@@ -17,6 +17,9 @@ User: <br>
 user1@igeargeek.com <br>
 user2@igeargeek.com <br>
 
+Password: <br>
+12344321 <br>
+
 
 ## Installation Local
 
