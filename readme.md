@@ -14,15 +14,15 @@
 https://coinlocker-igeargeek.000webhostapp.com
 
 User:
-1.user1@igeargeek.com
-2.user2@igeargeek.com
+1.user1@igeargeek.com <br>
+2.user2@igeargeek.com <br>
 
 
 ## Installation Local
 
 CD into the directory of this project and run the following three commands:
 
-1.composer install
-2.php artisan migrate
-3.php artisan db:seed
+1.composer install <br>
+2.php artisan migrate <br>
+3.php artisan db:seed <br>
 
