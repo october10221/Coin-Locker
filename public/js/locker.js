@@ -12,7 +12,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    setInterval(autoreload, 1100);
+    setInterval(autoreload, 1000);
 });
 
 function showmodal(id,size,status) {
@@ -29,7 +29,28 @@ function showmodal(id,size,status) {
             url: 'getdatalocker',
             data: {id:id},
             success: function (data) {
-                alert(data);
+                if(data == 1){
+                    bootbox.confirm({ 
+                        size: "small",
+                        message: "ต้องการรับสินค่าคืนหรือไม่?",
+                        callback: function(result){ 
+                            if(result == true){
+                                $.ajax({
+                                    method: "POST",
+                                    url: "returnlocker",
+                                    data: {id:id},
+                                    success: function (data) {
+                                        bootbox.alert("ทำรายการสำเร็จ");
+                                    }
+                                   });
+                            }else{
+                                console.log(id);
+                            }
+                         }
+                    })
+                }else{
+                    bootbox.alert(data);
+                }
             }
           });
     }

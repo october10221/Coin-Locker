@@ -17,6 +17,14 @@
 
         <!-- js -->
         <script src="js/locker.js"></script>
+
+        <!-- bootbox -->
+        <script src="js/bootbox.all.min.js"></script>
+        <!-- <script src="js/bootbox/bootbox.js"></script>
+        <script src="js/bootbox/bootbox.locales.js"></script>
+        <script src="js/bootbox/bootbox.locales.min.js"></script>
+        <script src="js/bootbox/bootbox.min.js"></script> -->
+
     </head>
     <body>
         @extends('dashboard')

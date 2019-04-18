@@ -62,8 +62,26 @@ class HomeController extends Controller
 
     public function getdatalocker()
     { 
-        $locker = Locker::get();
+        $input = Input::all();
+        $locker = Locker::where('name_locker',$input['id'])->get();
+
+        if($locker[0]['renter'] == auth()->user()->name){
+            return 1;
+        }
         return 'เสียใจด้วย Locker นี้ถูกใช้ไปแล้ว (Locker จะว่างเมื่อ'.$locker[0]['date_end'].' )';
+    }
+
+
+    public function returnlocker()
+    {
+        $input = Input::all();
+        Locker::where('name_locker',$input['id'])
+                ->update(
+                        [
+                            'status_locker' => 0,
+                            'renter' => 0,
+                        ]);
+         return 0;
     }
 
 

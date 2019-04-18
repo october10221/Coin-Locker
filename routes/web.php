@@ -22,5 +22,7 @@ Route::post('/setdefault','HomeController@setdefault');
 
 Route::post('/getdatalocker','HomeController@getdatalocker');
 
+Route::post('/returnlocker','HomeController@returnlocker');
+
 
 
